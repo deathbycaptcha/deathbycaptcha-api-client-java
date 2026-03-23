@@ -87,3 +87,7 @@ This project is configured for automated testing on multiple platforms:
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Responsible Use
+
+See [Responsible Use Agreement](RESPONSIBLE_USE.md).
