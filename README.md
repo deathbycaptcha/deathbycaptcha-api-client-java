@@ -15,7 +15,7 @@
 
 ## 📖 Introduction
 
-The [DeathByCaptcha](https://deathbycaptcha.com) Java client provides a simple, well-documented interface to the [DeathByCaptcha](https://deathbycaptcha.com) solving service. It supports both the HTTPS API (encrypted transport — recommended when security is a priority) and the socket-based API (faster and lower latency, recommended for high-throughput production workloads).
+The [DeathByCaptcha](https://deathbycaptcha.com) Java client is a full-featured **captcha solver API** wrapper for Java applications. It provides a simple, well-documented interface to the [DeathByCaptcha](https://deathbycaptcha.com) solving service — including support for **captcha bypass for Selenium** browser automation flows where CAPTCHAs must be solved before form submission or navigation can continue. It supports both the HTTPS API (encrypted transport — recommended when security is a priority) and the socket-based API (faster and lower latency, recommended for high-throughput production workloads).
 
 Key features:
 
