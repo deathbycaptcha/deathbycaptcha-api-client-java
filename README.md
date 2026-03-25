@@ -301,6 +301,8 @@ Full sample: [ExampleNormalCaptcha.java](https://github.com/deathbycaptcha/death
 Captcha captcha = client.decode("src/images/test.jpg");
 ```
 
+---
+
 <a id="sample-type-4-recaptcha-v2-token"></a>
 #### 🤖 Sample Type 4: reCAPTCHA v2 Token
 Official description: [reCAPTCHA Token API (v2)](https://deathbycaptcha.com/api/newtokenrecaptcha#token-v2)
@@ -313,6 +315,8 @@ String googlekey = "6LfW6wATAAAAAHLqO2pb8bDBahxlMxNdo9g947u9";
 String pageurl = "https://recaptcha-demo.appspot.com/recaptcha-v2-checkbox.php";
 Captcha captcha = client.decode(4, proxy, proxytype, googlekey, pageurl);
 ```
+
+---
 
 <a id="sample-type-5-recaptcha-v3-token"></a>
 #### 🤖 Sample Type 5: reCAPTCHA v3 Token
@@ -329,6 +333,8 @@ double min_score = 0.3;
 Captcha captcha = client.decode(proxy, proxytype, googlekey, pageurl, action, min_score);
 ```
 
+---
+
 <a id="sample-type-25-recaptcha-v2-enterprise"></a>
 #### 🏢 Sample Type 25: reCAPTCHA v2 Enterprise
 Official description: [reCAPTCHA v2 Enterprise](https://deathbycaptcha.com/api/newtokenrecaptcha#reCAPTCHAv2Enterprise)
@@ -341,6 +347,8 @@ String googlekey = "6LfW6wATAAAAAHLqO2pb8bDBahxlMxNdo9g947u9";
 String pageurl = "https://recaptcha-demo.appspot.com/recaptcha-v2-checkbox.php";
 Captcha captcha = client.decode(25, proxy, proxytype, googlekey, pageurl);
 ```
+
+---
 
 <a id="sample-type-8-geetest-v3"></a>
 #### 🧩 Sample Type 8: GeeTest v3
@@ -357,6 +365,8 @@ params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(8, params);
 ```
 
+---
+
 <a id="sample-type-9-geetest-v4"></a>
 #### 🧩 Sample Type 9: GeeTest v4
 Official description: [GeeTest](https://deathbycaptcha.com/api/geetest)
@@ -371,6 +381,8 @@ params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(9, params);
 ```
 
+---
+
 <a id="sample-type-11-text-captcha"></a>
 #### 💬 Sample Type 11: Text CAPTCHA
 Official description: [Text CAPTCHA](https://deathbycaptcha.com/api/textcaptcha)
@@ -379,6 +391,8 @@ Full sample: [ExampleTextcaptcha.java](https://github.com/deathbycaptcha/deathby
 ```java
 Captcha captcha = client.decode(11, "What is two plus two?", 0);
 ```
+
+---
 
 <a id="sample-type-12-cloudflare-turnstile"></a>
 #### ☁️ Sample Type 12: Cloudflare Turnstile
@@ -393,6 +407,8 @@ String pageurl = "https://target.com";
 Captcha captcha = client.decode(12, proxy, proxytype, sitekey, pageurl);
 ```
 
+---
+
 <a id="sample-type-13-audio-captcha"></a>
 #### 🔊 Sample Type 13: Audio CAPTCHA
 Official description: [Audio CAPTCHA](https://deathbycaptcha.com/api/audio)
@@ -403,6 +419,8 @@ byte[] fileContent = Files.readAllBytes(Paths.get("images/audio.mp3"));
 String audioBase64 = Base64.getEncoder().encodeToString(fileContent);
 Captcha captcha = client.decode(13, audioBase64, "en");
 ```
+
+---
 
 <a id="sample-type-14-lemin"></a>
 #### 🔵 Sample Type 14: Lemin
@@ -418,6 +436,8 @@ params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(14, params);
 ```
 
+---
+
 <a id="sample-type-15-capy"></a>
 #### 🏴 Sample Type 15: Capy
 Official description: [Capy](https://deathbycaptcha.com/api/capy)
@@ -432,6 +452,8 @@ params.put("api_server", "https://api.capy.me/");
 params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(15, params);
 ```
+
+---
 
 <a id="sample-type-16-amazon-waf"></a>
 #### 🛡️ Sample Type 16: Amazon WAF
@@ -449,6 +471,8 @@ params.put("context", "zPT0jOl1...");
 Captcha captcha = client.decode(16, params);
 ```
 
+---
+
 <a id="sample-type-17-siara"></a>
 #### 🔍 Sample Type 17: Siara
 Official description: [Siara](https://deathbycaptcha.com/api/siara)
@@ -464,6 +488,8 @@ params.put("useragent", "Mozilla/5.0");
 Captcha captcha = client.decode(17, params);
 ```
 
+---
+
 <a id="sample-type-18-mtcaptcha"></a>
 #### 🔒 Sample Type 18: MTCaptcha
 Official description: [MTCaptcha](https://deathbycaptcha.com/api/mtcaptcha)
@@ -477,6 +503,8 @@ params.put("sitekey", "MTPublic-xxx");
 params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(18, params);
 ```
+
+---
 
 <a id="sample-type-19-cutcaptcha"></a>
 #### ✂️ Sample Type 19: Cutcaptcha
@@ -493,6 +521,8 @@ params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(19, params);
 ```
 
+---
+
 <a id="sample-type-20-friendly-captcha"></a>
 #### 💚 Sample Type 20: Friendly Captcha
 Official description: [Friendly Captcha](https://deathbycaptcha.com/api/friendly)
@@ -506,6 +536,8 @@ params.put("sitekey", "FCMG...");
 params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(20, params);
 ```
+
+---
 
 <a id="sample-type-21-datadome"></a>
 #### 🛡️ Sample Type 21: DataDome
@@ -521,6 +553,8 @@ params.put("captcha_url", "https://target.com/captcha");
 Captcha captcha = client.decode(21, params);
 ```
 
+---
+
 <a id="sample-type-23-tencent"></a>
 #### 🇨🇳 Sample Type 23: Tencent
 Official description: [Tencent](https://deathbycaptcha.com/api/tencent)
@@ -534,6 +568,8 @@ params.put("appid", "appid");
 params.put("pageurl", "https://target.com");
 Captcha captcha = client.decode(23, params);
 ```
+
+---
 
 <a id="sample-type-24-atb"></a>
 #### 🏷️ Sample Type 24: ATB
@@ -560,12 +596,16 @@ Full API-level documentation for selected CAPTCHA types: parameter references, p
 
 > ⚠️ **Deprecated.** Types 2 (Coordinates) and 3 (Image Group) are legacy image-based reCAPTCHA challenge methods that are no longer used. Do not use them for new integrations — use the [reCAPTCHA Token API (v2 & v3)](#recaptcha-token-api-v2--v3) instead.
 
+---
+
 <a id="recaptcha-token-api-v2--v3"></a>
 ### 🔐 reCAPTCHA Token API (v2 & v3)
 
 The Token-based API solves reCAPTCHA challenges by returning a token you inject directly into the page form, rather than clicking images. Given a site URL and site key, DBC solves the challenge on its side and returns a token valid for one submission.
 
 - **Token Image API**: Provided a site URL and site key, the API returns a token that you use to submit the form on the page with the reCAPTCHA challenge.
+
+---
 
 <a id="recaptcha-v2-api-faq"></a>
 ### ❓ reCAPTCHA v2 API FAQ
@@ -605,6 +645,8 @@ Full example of **`token_params`**:
 **What's the response from the Token image API?**
 The token image API response has the same structure as regular captchas' response. The token will come in the `text` field of the `Captcha` object. It's valid for one use and has a 2 minute lifespan.
 
+---
+
 <a id="what-is-recaptcha-v3"></a>
 ### 🔎 What is reCAPTCHA v3?
 
@@ -613,6 +655,8 @@ This API extends the reCAPTCHA v2 Token API with two additional parameters: `act
 reCAPTCHA v3 returns a score from each user, that evaluates if the user is a bot or human. Lower scores near to 0 are identified as bot.
 
 The `action` parameter at reCAPTCHA v3 is an additional data used to separate different captcha validations like **login**, **register**, **sales**, etc.
+
+---
 
 <a id="recaptcha-v3-api-faq"></a>
 ### ❓ reCAPTCHA v3 API FAQ
@@ -638,6 +682,8 @@ Full example of **`token_params`**:
 **What's the response from reCAPTCHA v3 API?**
 The solution will come in the `text` field of the `Captcha` object. It's valid for one use and has a 1 minute lifespan.
 
+---
+
 <a id="amazon-waf-api-type-16"></a>
 ### 🛡️ Amazon WAF API (Type 16)
 
@@ -661,6 +707,8 @@ Amazon WAF Captcha is part of the Intelligent Threat Mitigation system within Am
 
 **Response:** The API returns a token valid for one use with a 1-minute lifespan. Set it as the `aws-waf-token` cookie on the target page before submitting the form.
 
+---
+
 <a id="cloudflare-turnstile-api-type-12"></a>
 ### 🌐 Cloudflare Turnstile API (Type 12)
 
@@ -680,6 +728,8 @@ Cloudflare Turnstile is a CAPTCHA alternative that protects pages without requir
 | `action` | Optional | Value of the `data-action` attribute or the `action` option passed to `turnstile.render` |
 
 **Response:** The API returns a token string valid for one use with a 2-minute lifespan. Submit it via the `input[name="cf-turnstile-response"]` field or pass it to the callback defined in `turnstile.render`.
+
+---
 
 <a id="-featured-sample-selenium-recaptcha-v2"></a>
 ### ⭐ Featured Sample: Selenium reCAPTCHA v2
