@@ -48,6 +48,7 @@ public class ExampleDatadome {
                 json_params.put("proxy", proxy);
                 json_params.put("proxytype", proxytype);
                 json_params.put("pageurl", pageurl);
+                json_params.put("captcha_url", captcha_url);
                 captcha = client.decode(21, json_params);
             } catch (IOException e) {
                 System.out.println("Failed uploading CAPTCHA");
