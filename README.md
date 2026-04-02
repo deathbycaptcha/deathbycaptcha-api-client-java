@@ -2,14 +2,15 @@
 
 
 <p align="center">
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-python"><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-nodejs"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-dotnet"><img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-java"><img alt="Java" src="https://img.shields.io/badge/%E2%80%BA-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=555555"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-php"><img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-perl"><img alt="Perl" src="https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-c11"><img alt="C" src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"></a>
-  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-cpp"><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-python#readme"><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-nodejs#readme"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-dotnet#readme"><img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-java#readme"><img alt="Java" src="https://img.shields.io/badge/%E2%80%BA-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=555555"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-php#readme"><img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-perl#readme"><img alt="Perl" src="https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-c11#readme"><img alt="C" src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-cpp#readme"><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"></a>
+  <a href="https://github.com/deathbycaptcha/deathbycaptcha-api-client-go#readme"><img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"></a>
 </p>
 
 
