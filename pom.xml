@@ -45,6 +45,7 @@
     <maven.compiler.target>${java.release}</maven.compiler.target>
     <maven.compiler.release>${java.release}</maven.compiler.release>
     <selenium.version>4.2.1</selenium.version>
+    <playwright.version>1.52.0</playwright.version>
   </properties>
 
   <dependencies>
@@ -53,6 +54,14 @@
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
         <version>${selenium.version}</version>
+        <optional>true</optional>
+    </dependency>
+
+    <!-- Playwright for browser automation -->
+    <dependency>
+        <groupId>com.microsoft.playwright</groupId>
+        <artifactId>playwright</artifactId>
+        <version>${playwright.version}</version>
         <optional>true</optional>
     </dependency>
 
