@@ -75,6 +75,7 @@ if (captcha != null) {
     - [Amazon WAF API (Type 16)](#amazon-waf-api-type-16)
     - [Cloudflare Turnstile API (Type 12)](#cloudflare-turnstile-api-type-12)
     - [Featured Sample: Selenium reCAPTCHA v2](#-featured-sample-selenium-recaptcha-v2)
+    - [Featured Sample: Playwright reCAPTCHA v2](#-featured-sample-playwright-recaptcha-v2)
 - [Project Structure](#project-structure)
 - [Continuous Integration](#continuous-integration)
 - [License](#license)
@@ -750,6 +751,29 @@ mvn -Psamples exec:java \
 ```
 
 See detailed usage in [docs/selenium-integration.md](docs/selenium-integration.md).
+
+---
+
+<a id="-featured-sample-playwright-recaptcha-v2"></a>
+### ⭐ Featured Sample: Playwright reCAPTCHA v2
+
+This repository includes an integrated Playwright sample at:
+
+- `src/test/java/com/DeathByCaptcha/OnlinePlaywrightRecaptchaIntegrationTest.java`
+
+Use this sample when you need a browser-automation flow that extracts `sitekey`, requests a token using DeathByCaptcha (type 4), injects it into the page, and submits the form — using Playwright instead of Selenium.
+
+Quick run:
+
+```bash
+mvn -Psamples exec:java \
+  -Dexec.mainClass="com.microsoft.playwright.CLI" \
+  -Dexec.args="install --with-deps chromium"
+mvn --batch-mode --errors --fail-at-end --show-version \
+  -Dtest=OnlinePlaywrightRecaptchaIntegrationTest test
+```
+
+---
 
 <a id="project-structure"></a>
 ## 🗂️ Project Structure
