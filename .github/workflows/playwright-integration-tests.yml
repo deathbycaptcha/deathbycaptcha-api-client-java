@@ -9,7 +9,7 @@ on:
 jobs:
   playwright-integration-tests:
     name: Playwright Integration Tests (Java 21)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     env:
       DBC_USERNAME: ${{ secrets.DBC_USERNAME }}
