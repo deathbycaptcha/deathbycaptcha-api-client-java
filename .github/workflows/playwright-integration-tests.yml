@@ -39,6 +39,9 @@ jobs:
             if [ "$attempt" = "3" ]; then exit 1; fi
           done
 
+      - name: Compile samples
+        run: mvn --batch-mode --errors --fail-at-end --show-version -Djava.release=21 -Psamples -DskipTests compile
+
       - name: Run Playwright integration test
         run: |
           mvn --batch-mode --errors --fail-at-end --show-version -Djava.release=21 -Dtest=OnlinePlaywrightRecaptchaIntegrationTest test

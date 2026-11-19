@@ -40,7 +40,7 @@ public class HttpClient extends Client {
             int intvl = 0;
             int[] results = {0, 0};
 
-            System.out.println("HttpClientCaller call");
+            HttpClient.this.log("HTTP", "call");
 
             while (deadline.after(new Date()) && null != url && null == response) {
                 HttpURLConnection req = null;
@@ -56,7 +56,7 @@ public class HttpClient extends Client {
 
                 if (0 < payload.length) {
                     try {
-                        System.out.println("Method post");
+                        HttpClient.this.log("HTTP", "POST");
                         req.setRequestMethod("POST");
                     } catch (java.lang.Exception e) {
                         //

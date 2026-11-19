@@ -4,9 +4,19 @@ All notable changes to this project are documented in this file.
 
 ## [Unreleased]
 
+### Added
+- Runnable Playwright reCAPTCHA v2 sample in
+  `samples/src/main/java/examples/ExamplePlaywrightRecaptchaV2.java`, with
+  its documentation in `docs/samples.md` and the README.
+
 ### Security
 - The online Playwright test no longer enables verbose logging, so account
   credentials are not written to CI logs.
+
+### Fixed
+- The HTTP client no longer prints a line for every call unless verbose is
+  enabled.
+- The Selenium sample no longer enables verbose with real credentials.
 
 ## [4.7.0] - 2026-03-09
 

@@ -52,6 +52,18 @@ mvn -Psamples exec:java \
   -Dselenium.headless=true
 ```
 
+## Run Playwright sample
+
+```bash
+mvn -Psamples exec:java \
+  -Dexec.mainClass="examples.ExamplePlaywrightRecaptchaV2"
+```
+
+Reads `DBC_AUTHTOKEN` or `DBC_USERNAME`/`DBC_PASSWORD` from the environment
+or from `.env`. Headless is the default; use `-Dplaywright.headless=false`
+to watch the browser. The sample solves reCAPTCHA v2 on the Google demo,
+injects the token and prints the success message, never the token.
+
 ## Common pitfalls
 
 - If you omit `-Psamples`, `examples.*` classes are not added to Maven sources and execution fails.

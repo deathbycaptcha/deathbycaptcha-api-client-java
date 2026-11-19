@@ -757,18 +757,26 @@ See detailed usage in [docs/selenium-integration.md](docs/selenium-integration.m
 <a id="-featured-sample-playwright-recaptcha-v2"></a>
 ### ⭐ Featured Sample: Playwright reCAPTCHA v2
 
-This repository includes an integrated Playwright sample at:
+This repository includes a runnable Playwright sample and an online test:
 
+- `samples/src/main/java/examples/ExamplePlaywrightRecaptchaV2.java`
 - `src/test/java/com/DeathByCaptcha/OnlinePlaywrightRecaptchaIntegrationTest.java`
 
-Use this sample when you need a browser-automation flow that extracts `sitekey`, requests a token using DeathByCaptcha (type 4), injects it into the page, and submits the form — using Playwright instead of Selenium.
+The sample extracts the sitekey, requests a type 4 token from DeathByCaptcha, injects it into the page, calls the widget callback when it exists, and verifies the demo page. Credentials come from `DBC_AUTHTOKEN` or `DBC_USERNAME`/`DBC_PASSWORD` in the environment or a `.env` file.
 
 Quick run:
 
 ```bash
+mvn -Psamples -DskipTests compile
 mvn -Psamples exec:java \
-  -Dexec.mainClass="com.microsoft.playwright.CLI" \
-  -Dexec.args="install --with-deps chromium"
+  -Dexec.mainClass="examples.ExamplePlaywrightRecaptchaV2"
+```
+
+Headless is the default; set `DBC_PLAYWRIGHT_HEADLESS=false` or `-Dplaywright.headless=false` to watch the browser.
+
+The online test is what CI runs:
+
+```bash
 mvn --batch-mode --errors --fail-at-end --show-version \
   -Dtest=OnlinePlaywrightRecaptchaIntegrationTest test
 ```

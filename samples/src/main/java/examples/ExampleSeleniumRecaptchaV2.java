@@ -115,7 +115,7 @@ public class ExampleSeleniumRecaptchaV2 {
                 return;
             }
 
-            client.isVerbose = true;
+            client.isVerbose = false;
 
             try {
                 System.out.println("Your balance is " + client.getBalance() + " US cents");
