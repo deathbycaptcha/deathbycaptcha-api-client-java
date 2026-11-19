@@ -60,7 +60,7 @@ public class OnlinePlaywrightRecaptchaIntegrationTest {
                 assertFalse("Expected non-empty reCAPTCHA site key", siteKey.trim().isEmpty());
 
                 client = hasToken ? new HttpClient(authToken) : new HttpClient(username, password);
-                client.isVerbose = true;
+                client.isVerbose = false;
 
                 JSONObject params = new JSONObject();
                 try {

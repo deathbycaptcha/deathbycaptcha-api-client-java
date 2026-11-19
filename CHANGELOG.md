@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [Unreleased]
+
+### Security
+- The online Playwright test no longer enables verbose logging, so account
+  credentials are not written to CI logs.
+
 ## [4.7.0] - 2026-03-09
 
 ### Changed
