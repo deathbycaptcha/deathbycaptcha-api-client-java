@@ -29,9 +29,11 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          mvn --batch-mode --errors --fail-at-end --show-version -Djava.release=21 dependency:resolve
           for attempt in 1 2 3; do
-            if mvn --batch-mode exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps chromium"; then break; fi
+            if mvn --batch-mode --errors --fail-at-end --show-version -Djava.release=21 dependency:resolve \
+               && mvn --batch-mode exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install chromium"; then
+              break
+            fi
             echo "Playwright install attempt $attempt failed, retrying in 20s"
             sleep 20
             if [ "$attempt" = "3" ]; then exit 1; fi
