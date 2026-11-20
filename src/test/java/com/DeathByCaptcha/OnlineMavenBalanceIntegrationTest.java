@@ -86,6 +86,7 @@ public class OnlineMavenBalanceIntegrationTest {
                     dependencyResult.output.contains("repo1.maven.org")
                         || dependencyResult.output.contains("Downloading from central")
                         || dependencyResult.output.contains("Downloaded from central")
+                        || dependencyResult.output.contains("Resolving io.github.deathbycaptcha")
                 );
 
             CommandResult testResult = runCommand(
